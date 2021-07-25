@@ -1,0 +1,233 @@
+body{
+    background: rgb(249, 255, 255);
+}
+.select-btn{
+    padding: 0 5px;
+    padding-right: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.select-btn select{
+    width: 100%;
+    padding: 10px 10px;
+    border: 0;
+    outline: 0;
+   
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+.navbar{
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 253, 253);
+}
+
+.navbar .container,.navbar .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 40px; */
+}
+ .left-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    
+}
+
+.left-icons .bars{
+    background: rgb(250, 250, 250);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.left-icons .icon{
+    margin-left: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-icons .c{
+    font-size: 30px;
+    transform: rotate(500deg);
+    font-weight: bold;
+
+}
+
+
+.navbar .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .right a{
+    margin-left: 15px;
+}
+
+/* covering the small phone 280px */
+@media (max-width:420px) {
+    .navbar .icon{
+        font-size: 12px;
+    }
+    .navbar .right .btn{
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+}
+/* end */
+
+.intro{
+    width: 100%;
+    height: calc(46vh);
+    background-image: url("/static/img/bg1.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.intro-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.616);
+}
+.intro-items{
+   
+    padding: 20px;
+    max-width: 650px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+
+.intro-items h3{
+    font-weight: 300 !important;
+    font-size: 20px;
+}
+
+ .payment-method img{
+    width: 50px;
+    padding-right: 10px;
+}
+
+.my-card {
+    position: relative;
+}
+
+.my-card , .my-card img {
+    background: white;
+    border-radius: 20px !important;
+}
+
+.my-card img{
+    height:auto;
+    object-fit:cover
+}
+.my-card .tickets-left{
+    position: absolute;
+    background: rgb(0, 0, 0);
+    color: white;
+    border-top-left-radius: 20px !important;
+    padding: 0 10px;
+}
+.my-card .heading{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.my-card .price{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.time .time-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.time .time-item .time-block{
+    background: rgb(236, 236, 236);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+}
+.time .time-item .time-text{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* side bar */
+.sidebar .modal-content{
+    position: fixed;
+    left: 0;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    height: 100vh;
+    max-width: 300px;
+}
+.side-block{
+    padding:4px 8px;
+    cursor: pointer;
+}
+.side-block, .side-block .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+}
+.side-block .left .text{
+    padding-left: 10px;
+}
+
+
+
+@media (min-width:800px) {
+    .my-card .heading{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .my-card .price{
+        text-transform: capitalize;
+        font-size: 16px;
+    }
+    .intro-items h3 {
+        font-size: 30px ;
+    }
+   
+    .my-card img{
+        height: 220px;
+        object-fit:cover
+    }
+}
+
+
+

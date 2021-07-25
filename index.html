@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container-fluid">
+            <div class="left-icons">
+                <!-- <div class="bars" data-mdb-toggle="modal" data-mdb-target="#sidebar">
+                    <i class="fa fa-bars"></i>
+                </div> -->
+                <div class="icon">zar<span class="c">c</span>omp</div>
+            </div>
+            <div class="right">
+
+                <a class="btn btn-white btn-rounded" data-mdb-toggle="modal" data-mdb-target="#login-modal">Login</a>
+                <a href="#" class="btn btn-rounded btn-primary" data-mdb-toggle="modal"
+                    data-mdb-target="#register-modal">Register</a>
+
+                <div class="left-icons mx-2">
+                    <div class="bars" data-mdb-toggle="modal" data-mdb-target="#sidebar">
+                        <i class="fa fa-bars"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--backgroud image -->
+    <div class="intro">
+        <div class="intro-body">
+            <div class="intro-overlay"></div>
+            <div class="intro-items">
+                <h3>
+                    With little as R1 - R10 , you can earn 2K + or
+                    <span class="badge rounded-pill bg-primary">useful goods</span>
+                    .buy more tickets and secure cash.
+                    <strong class="text-primary">Deposit start from R10</strong>
+                </h3>
+                <div class="payment-method">
+                    <img src="static/img/mastercard_colour.svg" alt="">
+                    <img src="static/img/visa_colour.svg" alt="">
+                    <img src="static/img/yoco_colour.svg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end backgroud image -->
+
+
+    <!-- side bar -->
+    <div class="modal fade sidebar" id="sidebar" tabindex="-1">
+        <div class="modal-content modal-dialog modal-dialog-scrollable ">
+            <div class="modal-header py-1">
+                <div class="left-icons">
+                    <div class="icon">zar<span class="c">c</span>omp</div>
+                </div>
+                <button type="button" class="btn-close btn-sm" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="side-block">
+                    <div class="left">
+                        <i class="fas">R</i>
+                        <div class="text">Deposit</div>
+                    </div>
+                    <div class="fas fa-chevron-right"></div>
+                </div>
+
+                <div class="side-block">
+                    <div class="left">
+                        <i class="fas fa-money-bill-alt"></i>
+                        <div class="text">Withdraw</div>
+                    </div>
+                    <div class="fas fa-chevron-right"></div>
+                </div>
+
+                <div class="side-block">
+                    <div class="left">
+                        <i class="fas fa-ticket-alt"></i>
+                        <div class="text">My Ticket</div>
+                    </div>
+                    <div class="fas fa-chevron-right"></div>
+                </div>
+
+
+                <div class="side-block">
+                    <div class="left">
+                        <i class="fa fa-question-circle"></i>
+                        <div class="text">How to play</div>
+                    </div>
+                    <div class="fas fa-chevron-right"></div>
+                </div>
+                <div class="side-block">
+                    <div class="left">
+                        <i class="fa fa-lock"></i>
+                        <div class="text">Privacy policy</div>
+                    </div>
+                    <div class="fas fa-chevron-right"></div>
+                </div>
+                <div class="side-block">
+                    <div class="left">
+                        <i class="fa fa-gavel"></i>
+                        <div class="text">Terms and Condtions</div>
+                    </div>
+                    <div class="fas fa-chevron-right"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end sidebar -->
+
+
+    <!--  ticket -->
+    <div class="modal fade" id="buy-ticket-modal" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable ">
+            <div class="modal-content">
+                <div class="modal-header py-3">
+                    <h6 class="modal-title">Awesome Laptop Worth R4000</h6>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <h6>Select your Ticket(s)</h6>
+                    <div class="btn select-btn btn-rounded mt-2">
+                        <select>
+                            <option value="2">R2 - 1 Ticket</option>
+                            <option value="4">R4 - 2 Tickets</option>
+                            <option value="6">R6 - 6 Tickets</option>
+                            <option value="8">R8 - 9 Tickets</option>
+                            <option value="10">R10 - 11 Tickets</option>
+                        </select>
+                    </div>
+                    <div class="my-4 text-center"><strong>You can buy as many as you want</strong></div>
+                    <div class="payment-method  text-center mt-3">
+                        <img src="static/img/mastercard_colour.svg" alt="">
+                        <img src="static/img/visa_colour.svg" alt="">
+                        <img src="static/img/yoco_colour.svg" alt="">
+                    </div>
+
+                </div>
+                <div class="modal-footer py-1" sty>
+                    <button type="button" class="btn btn-outline-primary btn-rounded">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ticket -->
+
+
+    <!--  register -->
+    <div class="modal fade" id="register-modal" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable ">
+            <div class="modal-content  ">
+                <div class="modal-header py-3">
+                    <h6 class="modal-title">Register</h6>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="form-outline mb-4">
+                        <input type="text" id="form1" class="form-control" data-mdb-showcounter="true" maxlength="20" />
+                        <label class="form-label" for="form1">Name</label>
+                        <div class="form-helper"></div>
+                        <div class="form-helper">klklkdlkdlklkl</div>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="text" id="form1" class="form-control" data-mdb-showcounter="true" maxlength="20" />
+                        <label class="form-label" for="form1">SA Phone Number</label>
+                        <div class="form-helper"></div>
+                        <div class="form-helper">klklkdlkdlklkl</div>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="text" id="form1" class="form-control" data-mdb-showcounter="true" maxlength="20" />
+                        <label class="form-label" for="form1">Email</label>
+                        <div class="form-helper"></div>
+                        <div class="form-helper">klklkdlkdlklkl</div>
+                    </div>
+
+                    <div class="form-outline  mb-4">
+                        <input type="text" id="form1" class="form-control" data-mdb-showcounter="true" maxlength="20" />
+                        <label class="form-label" for="form1">Password</label>
+                        <div class="form-helper"></div>
+                        <div class="form-helper">kjkd</div>
+                    </div>
+                </div>
+                <div class="modal-footer py-1">
+                    <button type="button" class="btn btn-outline-primary btn-rounded">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end register -->
+
+    <!--  login -->
+    <div class="modal fade" id="login-modal" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable ">
+            <div class="modal-content">
+                <div class="modal-header py-3">
+                    <h6 class="modal-title">login</h6>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="form-outline mb-4">
+                        <input type="text" id="form1" class="form-control" data-mdb-showcounter="true" maxlength="20" />
+                        <label class="form-label" for="form1">Example label</label>
+                        <div class="form-helper"></div>
+                        <div class="form-helper">klklkdlkdlklkl</div>
+                    </div>
+
+                    <div class="form-outline  mb-4">
+                        <input type="text" id="form1" class="form-control" data-mdb-showcounter="true" maxlength="20" />
+                        <label class="form-label" for="form1">Password</label>
+                        <div class="form-helper"></div>
+                        <div class="form-helper">kjkd</div>
+                    </div>
+                </div>
+                <div class="modal-footer py-1" sty>
+                    <button type="button" class="btn btn-outline-primary btn-rounded">Forgot Password</button>
+                    <button type="button" class="btn btn-outline-primary btn-rounded">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login -->
+    <div class="container">
+        <h1 class="text-center my-3">Games</h1>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3 my-4">
+                <div class="card my-card h-100 text-center">
+                    <img src="static/img/bg.jpg">
+                    <div class="tickets-left">5000 Tickets Left</div>
+                    <div class="card-body">
+                        <div class="heading">awesome laptop worth 4000</div>
+                        <div class="price">R2 Per ticket</div>
+                        <div class="time my-1">
+                            <div class="time-item">
+                                <div class="time-block">00</div>
+                                <div class="time-text">dys</div>
+                            </div>
+
+                            <div class="time-item">
+                                <div class="time-block">00</div>
+                                <div class="time-text">hrs</div>
+                            </div>
+
+                            <div class="time-item">
+                                <div class="time-block">00</div>
+                                <div class="time-text">min</div>
+                            </div>
+
+                        </div>
+                        <button class="btn btn-primary btn-rounded" data-mdb-toggle="modal"
+                            data-mdb-target="#buy-ticket-modal"> <i class="fas fa-ticket-alt"></i> Buy Ticket</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+</body>
+
+</html>
