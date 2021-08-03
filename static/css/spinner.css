@@ -1,0 +1,45 @@
+.spinner {
+    /* background: rebeccapurple; */
+
+    width: 45px;
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.curve {
+    background: rgb(60, 72, 238);
+
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    animation: spinner 2.3s infinite ;
+    font-size: 13px;
+}
+.spinner-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@keyframes spinner {
+    0% {
+        font-size: 0px;
+        width: 40px;
+        height: 40px;
+        transform: rotate(360deg);
+        background: rgb(248, 248, 248);
+        color: black;
+
+    }
+}

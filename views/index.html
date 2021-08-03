@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'blocks/header.html' %}
+</head>
+
+<body>
+
+
+
+    {% include 'blocks/nav.html' %}
+    <!--backgroud image -->
+    <div class="intro" style='background-image: url("static/img/bg1.jpg");'>
+        <div class="intro-body">
+            <div class="intro-overlay"></div>
+            <div class="intro-items">
+                <h3>
+                    With little as R1 - R10 , you can earn 2K + or
+                    <span class="badge rounded-pill bg-primary">useful goods</span>
+                    .buy more tickets and secure cash.
+                    <strong class="text-primary">Deposit start from R10</strong>
+                </h3>
+                <div class="payment-method">
+                    <img src="static/img/mastercard_colour.svg" alt="">
+                    <img src="static/img/visa_colour.svg" alt="">
+                    <img src="static/img/yoco_colour.svg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end backgroud image -->
+
+    <!-- side bar -->
+    {%include 'blocks/sidebar.html'%}
+    <!-- end sidebar -->
+
+    <!--  ticket -->
+    {%include 'blocks/ticket.html'%}
+    <!-- end ticket -->
+
+
+    <!--  register -->
+    {%include 'blocks/register.html'%}
+    <!-- end register -->
+
+    <!--  login -->
+    {%include 'blocks/login.html'%}
+    <!-- end login -->
+
+
+    <!-- cards-->
+    <div class="container">
+        <h1 class="text-center my-3">Games</h1>
+        <div class="row">
+            {%include 'blocks/item-card.html'%}
+        </div>
+    </div>
+
+
+    
+
+    <!-- end card -->
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <!-- MDB -->
+
+    <!--  footer -->
+    {%include 'blocks/footer.html'%}
+    <!-- end footer -->
+
+
+
+   
+  
+
+
+</body>
+
+</html>
